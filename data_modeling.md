@@ -122,10 +122,12 @@ X_test[:, 3:] = sc.transform(X_test[:, 3:])
 
 #### LinearRegression
 
+```python
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train,y_train)
 pred = regressor.predict(X_test)
+```
 
 #### Polynomial Regression
 
@@ -170,15 +172,19 @@ plt.show()
 
 ### TREE Regression
 
+```python
 from sklearn.tree import DecisionTreeRegressor
 regressor = DecisionTreeRegressor(random_state = 0)
 regressor.fit(X, y)
+```
 
 ### Random Forest Regression
 
+```python
 from sklearn.ensemble import RandomForestRegressor
 regressor = RandomForestRegressor(n_estimators = 10, random_state = 0)
 regressor.fit(X, y)
+```
 
 ### xgboost regression and classification
 
